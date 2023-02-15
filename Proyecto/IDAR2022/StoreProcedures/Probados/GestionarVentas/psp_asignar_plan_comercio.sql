@@ -12,12 +12,12 @@ BEGIN
     Devuelve OK o el mensaje de error en Mensaje.
     */
     -- Declaraciones
-    DECLARE tEstadoVenta INT;
+    DECLARE tEstadoVenta CHAR(1);
     DECLARE tIdComercio_venta INT;
     DECLARE tIdComercio_planescomercio INT;
     DECLARE tIdPlan SMALLINT;
     DECLARE tIdMedioPago INT;
-    DECLARE tEstadoPComercio INT;
+    DECLARE tEstadoPComercio CHAR(1);
     -- Exception handler
     DECLARE EXIT HANDLER FOR SQLEXCEPTION -- lo puedo cambiar por el numero de la exception
         BEGIN

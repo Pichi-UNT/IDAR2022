@@ -60,7 +60,7 @@ BEGIN
            dnicliente,
            direccioncliente,
            monto,
-           detalles,
+#            detalles,
            numerotarjeta,
            observaciones,
            estadoventa,

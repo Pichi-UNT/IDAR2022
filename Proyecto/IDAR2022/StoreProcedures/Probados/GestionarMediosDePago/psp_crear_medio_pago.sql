@@ -27,14 +27,14 @@ BEGIN
         LEAVE FINAL;
     END IF ;
 
-    IF pTipoMedioPago NOT IN ('B','D','P')THEN
+    IF pTipoMedioPago NOT IN ('C','D','P')THEN
         SELECT ('Error tipo de medio de pago incorrecto.') AS Mensaje;
         LEAVE FINAL;
     END IF ;
     
     START TRANSACTION;
         INSERT INTO mediospago (mediopago, tipomediopago, banco)
-        VALUES (pMedioPago,pTipoMedioPago,pBanco);
+        VALUES (pMedioPago,UPPER(pTipoMedioPago),pBanco);
         SELECT CONCAT('OK ', 'ID:', LAST_INSERT_ID()) AS Mensaje;
     COMMIT;
 
