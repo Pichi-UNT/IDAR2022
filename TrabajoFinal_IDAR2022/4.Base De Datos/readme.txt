@@ -1,0 +1,2 @@
+Le dejo el script para poblar la bd por aparte porque al parecer al importar no puedo conseguir que se importe con los datos.
+Tambien si llega a faltar algun sp por favor comuniquese conmigo porque probablemente sea error en la exportacion.
